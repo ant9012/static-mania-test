@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <base href=https://cdn.jsdelivr.net/gh/ant9012/static-mania-test@92453d027a73aa97a55f57285677c3a042e86fc1/ />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sonic Mania</title>
 
@@ -934,7 +933,7 @@ window.addEventListener('DOMContentLoaded', () => {
     })();
 
     // Boot the game engine
-    loadScript('lib/RSDKv5U.js').then(() => loadScript('modules/RSDKv5U.js'));
+    loadScript('./lib/RSDKv5U.js').then(() => loadScript('./modules/RSDKv5U.js'));
   } else {
     // We are in Launcher mode! Replay any buffered console lines
     for (const l of window.__engineConsoleBuffer) appendConsoleLine(l);
